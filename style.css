@@ -160,3 +160,48 @@ dt, dd {
 .contact-table{
     margin-left: 40px;
 }
+
+/* --- WORKSリンク集のズレ修正 --- */
+#works {
+  text-align: center; /* 全体を中央寄せに */
+  padding: 60px 0;
+}
+
+.works-links {
+  display: flex;
+  flex-direction: column; /* 縦に並べる */
+  align-items: center;    /* 中央に揃える */
+  gap: 30px;              /* 各項目ごとの隙間 */
+  margin-top: 40px;
+}
+
+.work-card {
+  display: block;
+  text-decoration: none;
+  color: #333;            /* 文字色（元のサイトに合わせて適宜変えてください） */
+  max-width: 400px;       /* 横幅が広がりすぎないように制限 */
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.work-card:hover {
+  opacity: 0.7;          /* ホバーしたときに少し透明にしてリンク感を出す */
+}
+
+.work-icon {
+  font-size: 2rem;       /* 絵文字の大きさ */
+  margin-bottom: 5px;
+}
+
+.work-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 5px 0;
+  letter-spacing: 0.1em; /* すっきり見えるように文字間隔を少し広げる */
+}
+
+.work-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
